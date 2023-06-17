@@ -147,6 +147,16 @@ sensor:
       name: "Gas Consumed"
     gas_delivered_be:
       name: "Gas Consumed Belgium"
+    aei_be_average_demand:
+      name: "Active Energy Import Current Demand Average (BE)"
+      accuracy_decimals: 3
+    aei_be_max_demand_month:
+      name: "Active Energy Import Month Max Demand (BE)"
+      accuracy_decimals: 3
+    aei_be_max_demand_year:
+      # It is actually the peak on the 13 months according to spec.
+      name: "Active Energy Import Year Max Demand (BE)"
+      accuracy_decimals: 3
   - platform: uptime
     name: "SlimmeLezer Uptime"
   - platform: wifi_signal

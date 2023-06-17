@@ -390,6 +390,15 @@ DEFINE_FIELD(slave_valve_position, uint8_t, ObisId(0, SLAVE_MBUS_ID, 24, 4, 0), 
  * E meter) (Note: 4.x spec has "hourly meter reading") */
 DEFINE_FIELD(slave_delivered, TimestampedFixedValue, ObisId(0, SLAVE_MBUS_ID, 24, 2, 1), TimestampedFixedField, units::m3, units::dm3);
 
+/* Current average demand - Active energy import */
+DEFINE_FIELD(aei_be_average_demand, FixedValue, ObisId(1, 0, 1, 4, 0), FixedField, units::kW, units::W);
+
+/* Maximum demand – Active energy import of the running month */
+DEFINE_FIELD(aei_be_max_demand_month, FixedValue, ObisId(1, 0, 1, 6, 0), FixedField, units::kW, units::W);
+
+/* Maximum demand – Active energy import of the last 13 months */
+DEFINE_FIELD(aei_be_max_demand_year, FixedValue, ObisId(0, 0, 98, 1, 0), FixedField, units::kW, units::W);
+
 } // namespace fields
 
 } // namespace dsmr

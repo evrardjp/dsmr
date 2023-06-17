@@ -332,3 +332,17 @@ constexpr ObisId slave_delivered::id;
 constexpr char slave_delivered::name_progmem[];
 constexpr const __FlashStringHelper *slave_delivered::name;
 
+/* _BE. AEI Stands for Active energy import */
+constexpr ObisId aei_be_average_demand::id;
+constexpr char aei_be_average_demand::name_progmem[];
+constexpr const __FlashStringHelper *aei_be_average_demand::name;
+
+/* _BE */
+constexpr ObisId aei_be_max_demand_month::id;
+constexpr char aei_be_max_demand_month::name_progmem[];
+constexpr const __FlashStringHelper *aei_be_max_demand_month::name;
+
+/* _BE */
+constexpr ObisId aei_be_max_demand_year::id;
+constexpr char aei_be_max_demand_year::name_progmem[];
+constexpr const __FlashStringHelper *aei_be_max_demand_year::name;
