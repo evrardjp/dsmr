@@ -36,7 +36,7 @@ wifi:
     ssid: ${device_name}
   
   # Powersaving for brownout due to 250mA restriction P1
-  output_power: 14dB
+  output_power: 10dB
 
 captive_portal:
 
